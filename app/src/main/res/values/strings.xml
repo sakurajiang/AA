@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">AA</string>
+
+    <string name="hello">Hello World, ActivityMain!</string>
+
+    <string name="ActivityMainTitle">AA费用小助手</string>
+    <string name="PayoutTypeFlag">消费</string>
+    <string name="WelcomeInfo">欢迎 您使用AA费用小助手 !</string>
+
+    <string name="ExportDataSaveFilePath">/sdcard/%s/export</string>
+
+    <string name="appGridTextPayoutAdd">记录消费</string>
+    <string name="app_name2">记录收入</string>
+    <string name="appGridTextPayoutManage">查询消费</string>
+    <string name="appGridTextAccountBookManage">账本管理</string>
+    <string name="app_name5">我的账户</string>
+    <string name="app_name6">账单管理</string>
+    <string name="appGridTextStatisticsManage">统计管理</string>
+    <string name="appGridTextCategoryManage">类别管理</string>
+    <string name="appGridTextUserManage">人员管理</string>
+
+    <string name="StatisticsProgressDialogTitle">统计</string>
+    <string name="StatisticsProgressDialogWaiting">正在统计中，请稍候...</string>
+
+    <string name="CheckBoxTextIsDefault">设置为默认账本</string>
+    <string name="ButtonTextSave">保存</string>
+    <string name="ButtonTextCancel">取消</string>
+    <string name="ButtonTextYes">是</string>
+    <string name="ButtonTextNo">否</string>
+    <string name="ButtonTextBack">返回</string>
+    <string name="ButtonTextDot">.</string>
+    <string name="ButtonTextOne">1</string>
+    <string name="ButtonTextTwo">2</string>
+    <string name="ButtonTextThree">3</string>
+    <string name="ButtonTextFour">4</string>
+    <string name="ButtonTextFive">5</string>
+    <string name="ButtonTextSix">6</string>
+    <string name="ButtonTextSeven">7</string>
+    <string name="ButtonTextEight">8</string>
+    <string name="ButtonTextNine">9</string>
+    <string name="ButtonTextZero">0</string>
+    <string name="ButtonTextChange">更正</string>
+    <string name="ButtonTextOk">确定</string>
+    <string name="TextViewTextCategoryName">类别名称</string>
+    <string name="TextViewTextParentID">所属分类</string>
+    <string name="TextViewTextChildrenCategory">%s子类</string>
+    <string name="TextViewTextPayoutTotal">共%1$s笔，合计消费%2$s</string>
+    <string name="TextViewTextAccountBookPayoutTotal">共%s笔 </string>
+    <string name="TextViewTextAccountBookPayoutMoney">合计消费%s元</string>
+    <string name="TextViewTextPayoutNoData">没有查询到消费记录</string>
+    <string name="SpinnerTextSelect">--请选择--</string>
+    <string name="ButtonTextSelectAccountBook">选择账本</string>
+    <string name="ButtonTextEnterAmount">输入金额</string>
+    <string name="ButtonTextSelectPayoutDate">选择日期</string>
+    <string name="ButtonTextSelectPayoutType">计算方式</string>
+    <string name="ButtonTextSelectUser">选择消费人</string>
+    <string name="ButtonTextSelectCategory">选择类别</string>
+    <string name="ButtonTextDatabaseBackup">数据备份</string>
+    <string name="ButtonTextDatabaseRestore">数据还原</string>
+
+    <string name="TitleAdd">新建</string>
+    <string name="TitleEdit">修改</string>
+
+    <string name="DialogTitleDelete">删除提示</string>
+    <string name="DialogTitleAccountBook">%s账本</string>
+    <string name="DialogMessageAccountBookDelete">账本删除后相关消费记录也会同时删除,你确定要删除%s吗?</string>
+    <string name="DialogTitleUser">%s人员</string>
+    <string name="DialogMessageUserDelete">你确定要删除%s用户吗?</string>
+    <string name="DialogMessagePayoutDelete">你确定要删除%s消费记录吗?</string>
+    <string name="DialogMessageCategoryDelete">你确定要删除%s类别吗?</string>
+    <string name="DialogTitleDatabaseBackup">数据备份</string>
+
+    <string name="DialogMessageDatabaseBackupSucceed">数据备份成功</string>
+    <string name="DialogMessageDatabaseBackupFail">数据备份失败</string>
+    <string name="DialogMessageDatabaseRestoreSucceed">数据还原成功</string>
+    <string name="DialogMessageDatabaseRestoreFail">数据还原失败</string>
+
+    <string name="ActivityTitleAccountBook">账本管理</string>
+    <string name="ActivityTitleCategory">类别管理(%s)</string>
+    <string name="ActivityTitleCategoryAddOrEdit">%s类别</string>
+    <string name="ActivityTitleUser">人员管理(%s)</string>
+    <string name="ActivityTitlePayoutAddOrEdit">%s消费</string>
+    <string name="ActivityTitlePayout">查询消费-%1$s(%2$s)</string>
+    <string name="ActivityTitleStatistics">统计管理-%1$s</string>
+    <string name="ActivityCategoryTotal">统计类别</string>
+
+    <string name="SlideMentTextAccountBookAdd">新建账本</string>
+    <string name="SlideMentTextCategoryAdd">新建类别</string>
+    <string name="SlideMentTextUserAdd">新建人员</string>
+    <string name="SlideMentTextSwitchAccountBook">切换帐本</string>
+    <string name="SlideMentTextHelp">软件帮助</string>
+    <string name="SlideMentTextAbout">关于软件</string>
+    <string name="SlideMentTextFeedback">建议反馈</string>
+    <string name="SlideMentTextUpdate">软件更新</string>
+    <string name="SlideMenuTextExportTable">导出表格</string>
+
+
+    <string name="MenuTextEdit">修改</string>
+    <string name="MenuTextDelete">删除</string>
+
+    <string name="HintAccountBookName">账本名称</string>
+    <string name="HintUserName">人员名称</string>
+    <string name="HintEnterAmount">请输入金额</string>
+    <string name="HintEnterComment">请输入消费心得或备注</string>
+    <string name="HintEnterCategory">请输入或选择消费类别</string>
+    <string name="HintSelectUser">请选择消费人，第一位为付款人</string>
+
+    <string name="TipsAddSucceed">保存成功</string>
+    <string name="TipsAddFail">保存失败</string>
+    <string name="TipsDeleteFail">删除失败</string>
+
+    <string name="CheckDataTextChineseEnglishNum">%s必须是英文、中文与数字</string>
+    <string name="CheckDataTextMoney">金额必须是数字，并且不能超过小数点后两位数</string>
+    <string name="CheckDataTextCategoryIsNull">请选择一个消费类别</string>
+    <string name="CheckDataTextPayoutUser">均分或借贷请至少选择两个消费人</string>
+    <string name="CheckDataTextPayoutUser2">个人消费请至少选择一个消费人</string>
+    <string name="CheckDataTextPayoutUserIsNull">请选择消费人</string>
+    <string name="CheckDataTextAccountBookExist">该账本已经存在，请换个账本名称</string>
+    <string name="CheckDataTextUserExist">该用户已经存在，请换个用户名称</string>
+
+
+    <string name="ErrorMessageExistPayout">有消费记录使用了该类别 ，请先删除该消费记录</string>
+
+    <string name="InitDefaultDataAccountBookName">默认账本</string>
+
+    <string name="button_text_accounts_save">完成</string>
+    <string name="button_text_accounts_save_continue">继续</string>
+    <string name="button_text_accounts_cancel">取消</string>
+    <string name="button_text_accounts_input_money">输入金额</string>
+    <string name="hint_text_accounts_money">请输入金额</string>
+    <string name="button_text_accounts_fodder">记账类别</string>
+    <string name="hint_text_accounts_name">请输入或选择类别</string>
+    <string name="button_text_accounts_occur_date">选择日期</string>
+    <string name="button_text_accounts_address_fodder">记账地址</string>
+    <string name="hint_text_accounts_address">您可以输入地点</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_contact">Contact</string>
+    <string name="register_bt">register</string>
+
+</resources>

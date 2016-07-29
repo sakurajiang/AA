@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="horizontal"
+  >
+  	<RelativeLayout android:id="@+id/RelativeLayoutDate"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:background="#ff647a97"
+  	android:visibility="gone"
+  	>
+  		<TextView android:id="@+id/tvPayoutDate"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:paddingLeft="5px"
+		android:paddingTop="2px" 
+		android:paddingRight="5px"
+		android:paddingBottom="2px"
+		android:textSize="11px" 
+  		android:textColor="#ffffffff"
+  		/>
+  		<TextView android:id="@+id/tvTotal"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_alignParentRight="true"
+  		android:paddingLeft="5px"
+		android:paddingTop="2px" 
+		android:paddingRight="5px"
+		android:paddingBottom="2px"
+		android:textSize="11px" 
+  		android:textColor="#ffffffff"
+  		/>
+  	</RelativeLayout>
+  	<RelativeLayout android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/RelativeLayoutDate"
+  	>
+		<ImageView android:id="@+id/PayoutIcon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingLeft="5px"
+		android:paddingTop="12px"
+		/>
+		<TextView android:id="@+id/PayoutName"
+		android:paddingTop="12px"
+		android:textSize="16px"
+		android:textColor="#ff000000"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/PayoutIcon"
+		android:ellipsize="marquee"
+		android:singleLine="true"
+		/>
+		<TextView android:id="@+id/Total"
+		android:textColor="#ff000000"
+		android:paddingRight="5px"
+		android:paddingTop="10px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		/>
+		<TextView android:id="@+id/PayoutUserAndPayoutType"
+		android:textColor="#ff666666"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/PayoutName"
+		android:layout_toRightOf="@id/PayoutIcon"
+		/>
+	</RelativeLayout>
+</RelativeLayout>

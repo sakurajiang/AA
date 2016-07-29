@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+>
+	<LinearLayout
+	  android:id="@+id/layMainBody"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:orientation="vertical"
+	  android:padding="5dp"
+	  >
+	  <TextView
+	  android:layout_width="fill_parent"
+	  android:layout_height="10dp"
+	  style="@style/StyleListViewItem"
+	  />
+	  <TextView android:id="@+id/tvCategoryName"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:text="@string/TextViewTextCategoryName"
+	  android:layout_marginTop="5dp"
+	  style="@style/StyleListViewItem"
+	  />
+	  <EditText android:id="@+id/etCategoryName"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="5dp"
+	  android:maxLength="20"
+	  />
+	  <TextView android:id="@+id/tvParentID"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:text="@string/TextViewTextParentID"
+	  android:layout_marginTop="5dp"
+	  style="@style/StyleListViewItem"
+	  />
+	  <Spinner android:id="@+id/SpinnerParentID"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="5dp"
+	  /> 
+	</LinearLayout>
+	<TableLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_alignParentBottom="true"
+	  android:stretchColumns="0,1"
+	  >
+	  <TableRow>
+	  <Button android:id="@+id/btnSave"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:text="@string/ButtonTextSave"
+	  />
+	  <Button android:id="@+id/btnCancel"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:text="@string/ButtonTextCancel"
+	  />
+	  </TableRow>
+	</TableLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:padding="10dp"
+  android:background="@drawable/listview_selector"
+  >
+  <TextView android:id="@+id/tvCategoryName"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="50px"
+  android:paddingLeft="125px"
+  android:textColor="#ff000000"
+  style="@style/StyleListViewItem"
+  />
+  <TextView android:id="@+id/tvCount"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignParentRight="true"
+  android:textSize="50px"
+  android:textColor="#ff000000"
+  />
+</RelativeLayout>

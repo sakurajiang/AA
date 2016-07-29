@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:padding="6px"
+  android:orientation="vertical"
+  >
+  <EditText android:id="@+id/etAccountBookName"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:hint="@string/HintAccountBookName"
+  android:maxLength="20"
+  />
+  <CheckBox android:id="@+id/chkIsDefault"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/etAccountBookName"
+  android:text="@string/CheckBoxTextIsDefault"
+  android:textColor="#000000"
+  />
+</LinearLayout>

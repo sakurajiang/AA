@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  
+  	<TableLayout android:id="@+id/TableLayoutButtonBox"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="0,1"
+	android:layout_alignParentBottom="true"
+	>
+		<TableRow>
+		<Button android:id="@+id/btnSave"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:text="@string/ButtonTextSave"/>
+		  <Button android:id="@+id/btnCancel"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:text="@string/ButtonTextCancel"/>
+		</TableRow>
+	</TableLayout>  
+  
+  <ScrollView android:id="@+id/ScrollViewMain"
+  	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_above="@id/TableLayoutButtonBox"
+	>
+	
+	<LinearLayout android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:orientation="vertical"
+		  android:background="@drawable/box"
+		  >
+		   <RelativeLayout android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  >
+				<ImageView android:id="@+id/imgSelectAccountBook"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/account_book_small_icon"/>
+				<Button android:id="@+id/btnSelectAccountBook"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/ButtonTextSelectAccountBook"
+				android:layout_alignParentRight="true"
+				/>
+			  	<EditText android:id="@+id/etAccountBookName"
+			  	android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/btnSelectAccountBook"
+				android:layout_toRightOf="@id/imgSelectAccountBook"
+				android:focusable="false"
+				/>
+			  </RelativeLayout>
+			  
+			  <RelativeLayout android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  >
+				<ImageView android:id="@+id/imgSelectAmount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/payout_small_icon"/>
+				<Button android:id="@+id/btnSelectAmount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/ButtonTextEnterAmount"
+				android:layout_alignParentRight="true"
+				/>
+			  	<EditText android:id="@+id/etAmount"
+			  	android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/btnSelectAmount"
+				android:layout_toRightOf="@id/imgSelectAmount"
+				android:numeric="decimal"
+				android:hint="@string/HintEnterAmount"
+				android:maxLength="5"
+				/>
+			  </RelativeLayout>
+			  <RelativeLayout android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  >
+				<ImageView android:id="@+id/imgSelectCategory"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@mipmap/category_small_icon"/>
+				<Button android:id="@+id/btnSelectCategory"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/ButtonTextSelectCategory"
+				android:layout_alignParentRight="true"
+				/>
+			  	<AutoCompleteTextView android:id="@+id/actvCategoryName"
+			  	android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/btnSelectCategory"
+				android:layout_toRightOf="@id/imgSelectCategory"
+				android:hint="@string/HintEnterCategory"
+				android:singleLine="true"
+				android:textColor="#ff000000"
+				android:completionThreshold="1"
+				android:dropDownWidth="fill_parent"
+				/>
+			  </RelativeLayout>			  
+			  <RelativeLayout android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  >
+				<Button android:id="@+id/btnSelectPayoutDate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/ButtonTextSelectPayoutDate"
+				android:layout_alignParentRight="true"
+				/>
+			  	<EditText android:id="@+id/etPayoutDate"
+			  	android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/btnSelectPayoutDate"
+				android:focusable="false"
+				/>
+			  </RelativeLayout>	
+		   <RelativeLayout android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  >
+				<Button android:id="@+id/btnSelectPayoutType"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/ButtonTextSelectPayoutType"
+				android:layout_alignParentRight="true"
+				/>
+			  	<EditText android:id="@+id/etPayoutType"
+			  	android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/btnSelectPayoutType"
+				android:focusable="false"
+				/>
+			  </RelativeLayout>			  
+			  <RelativeLayout android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  >
+				<Button android:id="@+id/btnSelectUser"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/ButtonTextSelectUser"
+				android:layout_alignParentRight="true"
+				/>
+			  	<EditText android:id="@+id/etPayoutUser"
+			  	android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/btnSelectUser"
+				android:hint="@string/HintSelectUser"
+				android:singleLine="true"
+				android:focusable="false"
+				/>
+			  </RelativeLayout>
+			  <LinearLayout android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  >
+			  	<EditText android:id="@+id/etComment"
+			  	android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:lines="7"
+				android:hint="@string/HintEnterComment"
+				android:gravity="fill_horizontal"
+				android:maxLength="301"
+				/>
+			  </LinearLayout>		
+		  </LinearLayout>
+	
+	</ScrollView>
+</RelativeLayout>

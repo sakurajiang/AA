@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jdk.aa">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.ActivityLoginOrRegister">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActivityMain"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity android:name=".activity.ActivityUser" />
+        <activity android:name=".activity.ActivityAccountBook" />
+        <activity android:name=".activity.ActivityCategory" />
+        <activity android:name=".activity.ActivityCategoryAddOrEdit" />
+        <activity android:name=".activity.ActivityCategoryChart" />
+        <activity android:name=".activity.ActivityPayoutAddOrEdit" />
+        <activity android:name=".activity.ActivityPayout" />
+        <activity android:name=".activity.ActivityStatistics" />
+
+        <receiver android:name=".receiver.ReceiverDatabaseBackup" />
+        <receiver android:name=".receiver.ReceiverBootStart">
+
+
+            　　
+
+            <intent-filter>
+
+
+                　　
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+
+            　　
+
+        </receiver>
+
+        <service android:name=".service.ServiceDatabaseBackup" />
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="Title">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">10dip</item>
+    </style>
+    <style name="StyleListView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:divider">@mipmap/divider</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+    </style>
+    <style name="StyleListViewItem">
+        <item name="android:textSize">50px</item><!--20-->
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <style name="NumberButtonText">
+        <item name="android:textSize">22.0px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/number_selector</item>
+    </style>
+</resources>

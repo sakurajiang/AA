@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PayoutType">
+        <item>均分</item>
+        <item>借贷</item>
+        <item>个人</item>
+    </string-array>
+    <string-array name="InitDefaultCategoryName">
+        <item>买菜</item>
+        <item>购物</item>
+        <item>交通</item>
+        <item>早餐</item>
+        <item>中餐</item>
+        <item>晚餐</item>
+        <item>通讯</item>
+        <item>房租</item>
+        <item>水电气网</item>
+        <item>借贷</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="InitDefaultUserName">
+        <item>张三</item>
+        <item>李四</item>
+    </string-array>
+
+    <string-array name="InitDefaultDataAccountBookName">
+        <item>默认账本</item>
+    </string-array>
+
+    <string-array name="SlideMenuActivityMain">
+        <item>数据备份</item>
+        <item>软件帮助</item>
+        <item>关于软件</item>
+        <item>建议反馈</item>
+        <item>软件更新</item>
+    </string-array>
+
+    <string-array name="SlideMenuUser">
+        <item>新建人员</item>
+    </string-array>
+
+    <string-array name="SlideMenuAccountBook">
+        <item>新建账本</item>
+    </string-array>
+
+    <string-array name="SlideMenuCategory">
+        <item>新建类别</item>
+        <item>统计类别</item>
+    </string-array>
+    <string-array name="SlideMenuPayout">
+        <item>切换账本</item>
+    </string-array>
+    <string-array name="SlideMenuStatistics">
+        <item>切换账本</item>
+        <item>导出表格</item>
+    </string-array>
+
+    <string-array name="SQLiteDALClassName">
+        <item>SQLiteDALUser</item>
+        <item>SQLiteDALAccountBook</item>
+        <item>SQLiteDALCategory</item>
+        <item>SQLiteDALPayout</item>
+        <item>SQLiteDALCreateView</item>
+    </string-array>
+</resources>

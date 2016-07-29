@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/blue"
+  >
+  	<ExpandableListView android:id="@id/ExpandableListViewCategory"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:cacheColorHint="#00000000" android:layout_alignParentTop="true"
+		android:fastScrollEnabled="true" />
+</LinearLayout>

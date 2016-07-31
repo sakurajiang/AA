@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 <EditText
     android:id="@+id/fragment_email_register_id"
     android:layout_width="match_parent"
@@ -11,20 +14,42 @@
     android:id="@+id/fragment_password_register_id"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:password="true"
+    android:layout_below="@id/fragment_email_register_id"
     android:hint="@string/prompt_password"/>
 <EditText
     android:id="@+id/fragment_name_register_id"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_below="@id/fragment_password_register_id"
     android:hint="@string/prompt_name"/>
 <EditText
     android:id="@+id/fragment_contact_register_id"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_below="@id/fragment_name_register_id"
     android:hint="@string/prompt_contact"/>
+    <EditText
+        android:id="@+id/fragment_myauthcodeedittext_register_id"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_contact_register_id"
+        />
+    <com.example.jdk.aa.utility.MyAuthCodeUtils
+        android:id="@+id/fragment_myauthcode_register_id"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        custom:myAuthcodeTextSize="20sp"
+        custom:myAuthcodeText="3213"
+        custom:myAuthcodeTextColor="#ff0000"
+        android:layout_below="@id/fragment_contact_register_id"
+        android:layout_marginLeft="200dp"/>
 <Button
     android:id="@+id/fragment_register_and_login"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+   android:layout_below="@id/fragment_myauthcode_register_id"
+
     android:text="@string/register_bt"/>
-</LinearLayout>
+
+</RelativeLayout>

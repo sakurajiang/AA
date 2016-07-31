@@ -10,7 +10,7 @@
   <TextView android:id="@+id/tvStatisticsResult"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
-  android:textSize="18px"
+  android:textSize="50px"
   android:padding="5px"
   android:lineSpacingExtra="5px"
   android:textColor="@color/black"

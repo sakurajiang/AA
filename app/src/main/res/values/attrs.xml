@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="myAuthcodeText" format="string"/>
+    <attr name="myAuthcodeTextColor" format="color"/>
+    <attr name="myAuthcodeTextSize" format="dimension"/>
+    <declare-styleable name="MyAuthCodeUtils">
+        <attr name="myAuthcodeText"/>
+        <attr name="myAuthcodeTextColor"/>
+        <attr name="myAuthcodeTextSize"/>
+    </declare-styleable>
+</resources>

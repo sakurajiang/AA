@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
     <EditText
         android:id="@+id/email_login_id"
         android:layout_width="match_parent"
@@ -11,10 +14,29 @@
         android:id="@+id/password_login_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:password="true"
+        android:layout_below="@id/email_login_id"
         android:hint="@string/prompt_password"/>
+    <EditText
+        android:id="@+id/authcodeedittext_login_id"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_login_id"/>
+    <com.example.jdk.aa.utility.MyAuthCodeUtils
+        android:id="@+id/authcode_login_id"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/password_login_id"
+        custom:myAuthcodeTextSize="20sp"
+        custom:myAuthcodeText="3213"
+        custom:myAuthcodeTextColor="#ff0000"
+        android:layout_marginLeft="200dp"/>
     <Button
         android:id="@+id/login_or_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/authcodeedittext_login_id"
         android:text="@string/action_sign_in"/>
-</LinearLayout>
+
+
+</RelativeLayout>

@@ -54,24 +54,31 @@ public class ActivityLoginOrRegister extends ActivityBaseOfLRActivity implements
         return subscriber;
     }
     @Override
-    public void OnLoginbtClick(String email_login_et_value, String password_login_et_value) {
+    public void OnLoginbtClick(boolean isAuthcode,String email_login_et_value, String password_login_et_value) {
         if(email_login_et_value.length()==0||password_login_et_value.isEmpty()){
-            fragmentRegister=new FragmentRegister();
-            replaceAnFragment(fragmentRegister);
-            fragmentRegister.setLoginbtListener(this);
-        }else{
+                fragmentRegister = new FragmentRegister();
+                replaceAnFragment(fragmentRegister);
+                fragmentRegister.setLoginbtListener(this);
+        }else if(isAuthcode){
             subscription=httpUtils.loginOrRegisterUtils(createLoginSubscriber(),email_login_et_value,password_login_et_value,null,null);
+        }else{
+            Toast.makeText(this,"please enter correct authcode",Toast.LENGTH_SHORT).show();
         }
     }
 
 
     @Override
-    public void OnRegisterbtClick(String fragment_email_value, String fragment_password_value, String fragment_name_value, String fragment_contact_value) {
+    public void OnRegisterbtClick(boolean isRegister,String fragment_email_value, String fragment_password_value, String fragment_name_value, String fragment_contact_value) {
         if(fragment_name_value.length()!=0||!fragment_contact_value.isEmpty()) {
-            Subscriber<ModelResultSet> modelResultSetSubscriber=createLoginSubscriber();
-            subscription = httpUtils.loginOrRegisterUtils(modelResultSetSubscriber, fragment_email_value, fragment_password_value, fragment_name_value, fragment_contact_value);
+            if(isRegister) {
+                Subscriber<ModelResultSet> modelResultSetSubscriber = createLoginSubscriber();
+                subscription = httpUtils.loginOrRegisterUtils(modelResultSetSubscriber, fragment_email_value, fragment_password_value, fragment_name_value, fragment_contact_value);
+            }else{
+                Toast.makeText(this,"please enter correct authcode",Toast.LENGTH_SHORT).show();
+            }
+        }else if(isRegister) {
+            httpUtils.loginOrRegisterUtils(createLoginSubscriber(), fragment_email_value, fragment_password_value, null, null);
         }
-            httpUtils.loginOrRegisterUtils(createLoginSubscriber(),fragment_email_value,fragment_password_value,null,null);
     }
 
 

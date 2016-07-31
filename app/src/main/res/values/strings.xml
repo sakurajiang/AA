@@ -149,6 +149,6 @@
     </string>
     <string name="prompt_name">Name</string>
     <string name="prompt_contact">Contact</string>
-    <string name="register_bt">register</string>
+    <string name="register_bt">registerAndLogin</string>
 
 </resources>

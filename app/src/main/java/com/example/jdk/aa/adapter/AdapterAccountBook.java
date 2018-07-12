@@ -19,7 +19,7 @@ import com.example.jdk.aa.model.ModelAccountBook;
 
 public class AdapterAccountBook extends AdapterBase {
 	
-	private class Holder  
+	private class Holder   
 	{
 		ImageView ivIcon;
 		TextView tvName;
